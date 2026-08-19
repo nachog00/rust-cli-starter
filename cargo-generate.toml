@@ -1,0 +1,7 @@
+[template]
+cargo_generate_version = ">=0.18.0"
+# The spec/design docs are for this template, not for generated projects.
+ignore = ["docs"]
+
+[placeholders]
+description = { type = "string", prompt = "One-line description of the project", default = "A hexagonal Rust CLI" }

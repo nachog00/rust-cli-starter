@@ -1,0 +1,6 @@
+# Project-local Helix config. Helix picks up rust-analyzer (installed via
+# rust-toolchain.toml's components) automatically; this just turns on
+# format-on-save with rustfmt for this workspace.
+[[language]]
+name = "rust"
+auto-format = true

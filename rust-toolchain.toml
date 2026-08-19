@@ -1,0 +1,5 @@
+[toolchain]
+channel = "stable"
+# rust-analyzer is installed as a rustup component so it's on PATH for any
+# LSP client (Helix, and anything else that speaks LSP) — no editor plugin needed.
+components = ["rustfmt", "clippy", "rust-analyzer"]

@@ -1,0 +1,28 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/core",
+    "crates/domain",
+    "crates/config",
+    "crates/installer",
+    "crates/cli",
+    "crates/app",
+]
+
+[workspace.package]
+edition = "2024"
+license = "MIT"
+repository = ""
+
+[workspace.dependencies]
+{{project-name}}-core = { path = "crates/core", version = "0.1.0" }
+{{project-name}}-domain = { path = "crates/domain", version = "0.1.0" }
+{{project-name}}-config = { path = "crates/config", version = "0.1.0" }
+{{project-name}}-installer = { path = "crates/installer", version = "0.1.0" }
+{{project-name}}-cli = { path = "crates/cli", version = "0.1.0" }
+anyhow = "1"
+chrono = { version = "0.4", default-features = false, features = ["std", "clock"] }
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+toml = "0.8"

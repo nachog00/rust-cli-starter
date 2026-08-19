@@ -1,0 +1,20 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "{{description}}"
+
+[[bin]]
+name = "{{project-name}}"
+path = "src/main.rs"
+
+[dependencies]
+{{project-name}}-core = { workspace = true }
+{{project-name}}-config = { workspace = true }
+{{project-name}}-domain = { workspace = true }
+{{project-name}}-installer = { workspace = true }
+{{project-name}}-cli = { workspace = true }
+anyhow = { workspace = true }
+clap = { workspace = true }
