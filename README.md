@@ -111,7 +111,7 @@ This repo is a [`cargo-generate`](https://cargo-generate.github.io/cargo-generat
 template:
 
 ```sh
-cargo generate --git <this-repo-url>
+cargo generate --git https://github.com/nachog00/rust-cli-starter
 ```
 
 It prompts for the project name (renames crates, binary, and `use` paths) and
